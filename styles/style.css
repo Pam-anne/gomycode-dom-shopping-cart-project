@@ -1,0 +1,138 @@
+/* Reset default browser spacing */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Icon styling for plus, minus, trash and heart */
+i{
+  font-size:35px;
+  cursor:pointer;
+  margin:0 10px;
+  color:black;
+}
+
+/* Center main container */
+main{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Shopping cart container */
+.shopping-card-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-color:#e7e7e7;
+  border-radius:10px;
+  padding:3%;
+  margin:50px 0;
+}
+
+/* Total price text */
+.total-price span{
+  font-size:30px;
+}
+
+/* Bold total number */
+.total{
+  font-weight:bold;
+}
+
+/* Products container */
+.list-products{
+  display:flex;
+  justify-content:center;
+  margin-top:30px;
+  width:70%;
+  gap:20px;
+}
+
+/* Cart badge in navbar */
+.cart-badge{
+  background:red;
+  color:white;
+  padding:3px 10px;
+  border-radius:50%;
+  font-size:14px;
+  margin-left:5px;
+}
+
+/* Product card styling */
+.card{
+  padding:5%;
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+
+/* Card hover animation */
+.card:hover{
+  transform:scale(1.05);
+  box-shadow:0px 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Card body alignment */
+.card-body{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Quantity display */
+.quantity{
+  font-size:25px;
+  background:black;
+  color:white;
+  padding:5px 12px;
+  border-radius:10px;
+}
+
+/* Align quantity buttons */
+.card-body div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:25px;
+}
+
+/* Icon colors */
+.fa-plus-circle{
+  color:green;
+}
+
+.fa-minus-circle{
+  color:orange;
+}
+
+.fa-trash-alt{
+  color:#de6b5c;
+}
+
+/* Hover animations for icons */
+.fa-plus-circle:hover,
+.fa-minus-circle:hover{
+  transform:scale(1.2);
+  transition:0.2s;
+}
+
+.fa-trash-alt:hover{
+  transform:scale(1.2);
+}
+
+/* Heart animation when liked */
+.liked{
+  color:red;
+  transform:scale(1.3);
+  transition:0.3s;
+}
+
+/* Total price card style */
+.total-price{
+  background:white;
+  padding:15px 30px;
+  border-radius:10px;
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+}
